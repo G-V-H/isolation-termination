@@ -8,7 +8,7 @@ work_out_picks = prompt.multi_select("Please select your workouts", choices)
 #prompt user for length of time in seconds for each exercise
 work_out_length = prompt.ask("How many seconds would you like to do for each exercise?") do |q|
     q.required true
-    q.validate /\A[0-9]\Z/ 
+    q.validate /\A[0-9]+\Z/ 
     q.modify :int
   end
 #prompt user for difficulty (easy, medium, hard) will set rest time (30 1, 20 2, 10 3)
