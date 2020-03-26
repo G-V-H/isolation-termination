@@ -35,11 +35,11 @@ def timer(exercise, sec, rest)
         spinner.success('Done!')
 
         if rest == "Easy"
-            rest(3)
+            rest(30)
         elsif rest == "Medium"
-            rest(3)
+            rest(20)
         else
-            rest(3)
+            rest(10)
         end
 
     end
